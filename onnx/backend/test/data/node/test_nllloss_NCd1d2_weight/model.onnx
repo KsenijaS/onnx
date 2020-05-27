@@ -1,0 +1,26 @@
+backend-test:Ý
+N
+input
+target
+weightloss"NegativeLogLikelihoodLoss*
+	reduction"none test_nllloss_NCd1d2_weightZ
+input
+
+
+
+
+Z
+target
+
+
+
+Z
+weight
+
+
+b
+loss
+
+
+
+B

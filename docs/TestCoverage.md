@@ -6233,7 +6233,7 @@ target = np.random.randint(0, high=C, size=(N, ))
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=None, reduction=reduction)
 
 expect(node, inputs=[input, target], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NC')
+    name='test_nllloss_NC')
 ```
 
 </details>
@@ -6257,7 +6257,7 @@ target = np.random.randint(0, high=C, size=(N, dim1, dim2))
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=None, reduction=reduction)
 
 expect(node, inputs=[input, target], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2')
+    name='test_nllloss_NCd1d2')
 ```
 
 </details>
@@ -6281,7 +6281,7 @@ target = np.random.randint(0, high=C, size=(N, dim1, dim2))
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=None, reduction=reduction)
 
 expect(node, inputs=[input, target], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_reduction_mean')
+    name='test_nllloss_NCd1d2_reduction_mean')
 ```
 
 </details>
@@ -6305,7 +6305,7 @@ target = np.random.randint(0, high=C, size=(N, dim1, dim2))
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=None, reduction=reduction)
 
 expect(node, inputs=[input, target], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_reduction_sum')
+    name='test_nllloss_NCd1d2_reduction_sum')
 ```
 
 </details>
@@ -6330,7 +6330,7 @@ weight = np.random.rand(C).astype(np.float32)
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=weight, reduction=reduction)
 
 expect(node, inputs=[input, target, weight], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_with_weight')
+    name='test_nllloss_NCd1d2_weight')
 ```
 
 </details>
@@ -6355,7 +6355,7 @@ weight = np.random.rand(C).astype(np.float32)
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=weight, reduction=reduction)
 
 expect(node, inputs=[input, target, weight], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_with_weight_reduction_mean')
+    name='test_nllloss_NCd1d2_weight_reduction_mean')
 ```
 
 </details>
@@ -6380,7 +6380,7 @@ weight = np.random.rand(C).astype(np.float32)
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=weight, reduction=reduction)
 
 expect(node, inputs=[input, target, weight], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_with_weight_reduction_sum')
+    name='test_nllloss_NCd1d2_weight_reduction_sum')
 ```
 
 </details>
@@ -6408,7 +6408,7 @@ weight = np.random.rand(C).astype(np.float32)
 negative_log_likelihood_loss = compute_negative_log_likelihood_loss(input, target, weight=weight, reduction=reduction, ignore_index=ignore_index)
 
 expect(node, inputs=[input, target, weight], outputs=[negative_log_likelihood_loss],
-    name='test_negative_log_likelihood_loss_input_shape_is_NCd1d2_with_weight_reduction_sum_ignore_index')
+    name='test_nllloss_NCd1d2_weight_reduction_sum_ignore_index')
 ```
 
 </details>
